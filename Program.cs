@@ -16,5 +16,7 @@ namespace JoKenPo
 
         //Teste para aparecer no Git
 
+        //truco
+
     }
 }
