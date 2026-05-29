@@ -14,7 +14,7 @@ namespace JoKenPo
             Application.Run(new Form1());
         }
 
-        //Teste para aparecer no guit 
+        //Teste para aparecer no Git
 
     }
 }
