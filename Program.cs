@@ -13,5 +13,7 @@ namespace JoKenPo
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+
+        //Teste
     }
 }
