@@ -14,6 +14,7 @@ namespace JoKenPo
             Application.Run(new Form1());
         }
 
-        //Teste
+        //Teste para aparecer no guit 
+
     }
 }
