@@ -1,6 +1,6 @@
 ﻿namespace JoKenPo
 {
-    partial class Form1
+    partial class FormTelaGame
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTelaGame));
             labelTitulo = new Label();
             pictureBox2 = new PictureBox();
             picResulado = new PictureBox();
@@ -149,6 +149,7 @@
             btnPapel.Size = new Size(200, 200);
             btnPapel.TabIndex = 10;
             btnPapel.UseVisualStyleBackColor = true;
+            btnPapel.Click += btnPapel_Click;
             // 
             // btnTesoura
             // 
@@ -170,7 +171,7 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // FormTelaGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -187,9 +188,10 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(labelTitulo);
-            Name = "Form1";
+            Name = "FormTelaGame";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "GAME";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)picResulado).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

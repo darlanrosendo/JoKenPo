@@ -22,9 +22,9 @@ namespace JoKenPo
         // Array de imagens para representar Pedra, Papel e Tesoura
         public static Image[] imagens =
         {
-            Image.FromFile("imagens/Pedra.png"),    // Índice 0: Pedra
-            Image.FromFile("imagens/Papel.png"),    // Índice 1: Papel
-            Image.FromFile("imagens/Tesoura.png")   // Índice 2: Tesoura
+            Image.FromFile("Resources/Pedra.png"),    // Índice 0: Pedra
+            Image.FromFile("Resources/papel.png"),    // Índice 1: Papel
+            Image.FromFile("Resources/Tesoura.png")   // Índice 2: Tesoura
         };
 
         // Imagens usadas no jogo para exibir a jogada de cada um
@@ -37,7 +37,7 @@ namespace JoKenPo
         // Método que executa a jogada do computador gerando um número aleatório entre 0 e 2
         private int JogadaPC()
         {
-            return rand.Next(0, 3); // 0 = Pedra, 1 = Papel, 2 = Tesoura
+            return rand.Next(3); // 0 = Pedra, 1 = Papel, 2 = Tesoura
         }
 
         // Método principal do jogo: define o resultado baseado nas escolhas
@@ -57,7 +57,7 @@ namespace JoKenPo
             // Verifica se o jogador venceu
             else if ((jogador == 0 && pc == 2) || // Pedra vence Tesoura
                      (jogador == 1 && pc == 0) || // Papel vence Pedra
-                     (jogador == 2 && pc == 1))   // Tesoura vence Papel
+                     (jogador == 2 && pc == 1))  // Tesoura vence Papel
             {
                 return Resultado.Ganhar;
             }
