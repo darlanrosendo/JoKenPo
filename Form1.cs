@@ -1,10 +1,10 @@
 namespace JoKenPo
 {
     // Classe do formulário principal
-    public partial class Form1 : Form
+    public partial class FormTelaGame : Form
     {
         // Construtor do formulário que inicializa os componentes da interface
-        public Form1()
+        public FormTelaGame()
         {
             InitializeComponent();
         }
@@ -41,17 +41,17 @@ namespace JoKenPo
             {
                 // Caso o jogador tenha vencido
                 case Game.Resultado.Ganhar:
-                    picResulado.BackgroundImage = Image.FromFile("imagens/Ganhou.png");
+                    picResulado.BackgroundImage = Image.FromFile("Resources/Ganhar.png");
                     goto default;
 
                 // Caso o jogador tenha perdido
                 case Game.Resultado.Perder:
-                    picResulado.BackgroundImage = Image.FromFile("imagens/Perdeu.png");
+                    picResulado.BackgroundImage = Image.FromFile("Resources/Perder.png");
                     goto default;
 
                 // Caso tenha empatado
                 case Game.Resultado.Empatar:
-                    picResulado.BackgroundImage = Image.FromFile("imagens/Empatou.png");
+                    picResulado.BackgroundImage = Image.FromFile("Resources/Empatar.png");
                     goto default;
 
                 // Executado após qualquer resultado acima
@@ -62,6 +62,8 @@ namespace JoKenPo
                     break;
             }
         }
+
+
     }
 }
 
